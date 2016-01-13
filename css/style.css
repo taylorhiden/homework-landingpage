@@ -51,13 +51,15 @@ body {
   font-size: 12px;
      line-height: 1.4;
 }
+/*ND: Got some weird spacing here. Why is line-height indented so much?*/
 
 header {
      color: #000;
      background: url(../images/header_bg.jpg) no-repeat center top rgb(134,141,157);
       background-size: cover;
 }
-
+/*ND: Again, be mindful of indentation with background-size. Run you code through a formatter
+to check for this*/
 h1 {
   font-weight: 800;
   font-size: 24px;
@@ -159,6 +161,7 @@ nav {
   font-size: 9px;
   font-weight: 600;
 }
+/*ND: You spelled copyright wrong here so it looks like these styles didn't render.*/
 
 
 /******************************************
@@ -185,10 +188,10 @@ footer {
   height: 300px;
 }
 
+/*ND: Play around some with the margin and padding between your icons--they look a little too cramped
+next to each other*/
+
+/*ND: I notice you don't have multiple columns. Did you have trouble with floats/width? Let me know*/
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
-
-
-
-

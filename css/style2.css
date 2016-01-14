@@ -1,4 +1,11 @@
 /*
+ * Hi Taylor!
+ * I will be writing feedback on your assignment in CSS comments like this one.
+ *
+ * Overall your CSS code is very nicely formatted and super easy to follow.
+ */
+
+/*
 Project Name: Blank Template
 Client: Your Client
 Author: Your Name
@@ -10,14 +17,14 @@ Developer @GA in NYC
 /* SETUP
 /*******************************************/
 
-/* Box Model Hack */
+/* Box Model Hack */  /* <-- Nice find! */
 * {
      -moz-box-sizing: border-box; /* Firexfox */
      -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
      box-sizing: border-box; /* IE */
 }
 
-/* Clear fix hack */
+/* Clear fix hack */  /* <-- Nice find! */
 .clearfix:after {
      content: ".";
      display: block;
@@ -55,6 +62,10 @@ body {
 #page-header {
      color: #000;
      background: #033048;
+     /* 
+      The background-size property really only applies when you have a background image.  It does 
+      not do anything when your background is simply a color.  You can remove this rule.
+     */
       background-size: cover;
       padding: 0 3%;
 }
@@ -82,6 +93,10 @@ h1.header {
   color: white;
 }
 
+/* 
+  The links in the header are underlined on your page, but they are not in the design file. 
+  Think about what property you could use to remove the underline from the links in your CSS.
+*/
 #page-header nav li a {
   color: #f9e42e;
 }
@@ -108,6 +123,13 @@ p {
   font-size: 24px;
 }
 
+/*
+  I like the use of the <span> with this class to style the first letter of the paragraph.  
+  That is a good way to get this done; however there is actually an easier way.  CSS has a
+  pseudo-selector called "::first-letter" that you can use as well.  Check out the ref here:
+  
+  http://www.w3schools.com/cssref/sel_firstletter.asp
+*/
 .firstLetter {
   float       : left;
   font-size   : 3.26em;
@@ -116,7 +138,10 @@ p {
   font-weight: 600;
 }
 
-.firstLetter + span {
+/* 
+  Nice use of the + in your selecter - great find!
+*/
+.firstLetter + span { 
   margin-left : -0.5em;
 }
 
@@ -218,6 +243,10 @@ a {
 #container {
   width: 100%;
   margin: auto;
+  /* 
+    You can remove the height rule on your container here.  It is not really doing much here, especially since
+    your container on the page is much longer than 500px.  (It is just spilling over past the 500px tall mark.)
+  */
   height: 500px;
 
 }

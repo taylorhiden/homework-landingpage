@@ -1,3 +1,13 @@
+<!--
+	Hi Taylor!
+	I will be writing feedback on your assignment in HTML comments like this one.
+
+	Overall, your site looks great!  It is very close to the design file and your code is very clean.  Nice job!
+
+	Also, your code is very nicely formatted and super easy to read.  Great use of semantic
+	tags throughout the page!
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -32,7 +42,19 @@
 				<h3 class="testimonial_title">How I implemented Relaxr in 2 weeks and changed my life.</h3>
 				<img src="images/blog_photo1.jpg" alt="Blog Photo">
 				<p class="testimonial"><span class="firstLetter">L</span><span>orem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet tellus eros. Nulla eget orci mauris. Pellentesque ullamcorper, augue eu ultrices faucibus, sapien tellus dictum erat, nec pellentesque elit ligula et dolor. Mauris euismod sit amet nulla quis volutpat. Aliquam pellentesque ultrices felis non mollis. Cras commodo in lacus in tempus. Sed in libero et est cursus posuere. Suspendisse potenti. Aenean elementum sapien eget eros convallis, ac condimentum tellus hendrerit. Quisque in odio eu nunc convallis rhoncus in eget odio. Etiam ut urna vitae orci gravida auctor. Donec malesuada metus et accumsan mattis. Mauris sodales aliquet ante, quis varius metus fringilla at. Sed scelerisque at risus tristique pellentesque. Nullam vel rhoncus leo, vestibulum consectetur ante. </span></p>
+				<!-- 
+					Sometimes, HTML freaks out if there is a random ">" or "<" in the code (because those characters are used to start
+					and end the HTML tags).  An alternate way to get those characters into your HTML is:
+
+					&gt; (for > - gt stands for greater than)
+					&lt; (for < - lt stands for less than)
+				-->
 				<p class="read_more">Read More ></p>
+
+				<!-- 
+					Instead of this <p> tag containing a bunch of underscores, take a look at the <hr> tag.
+					"hr" stands for "horizontal rule" and it basically adds a horizontal line to your page.
+				-->
 				<p>___________________________________________________</p>
 				<h3 class="testimonial_title">I traveled across the globe thanks to Relaxr’s Excel auomation</h3>
 				<img src="images/blog_photo2.jpg" alt="Blog Photo 2">
@@ -43,7 +65,7 @@
 			
 			<section id="sidebar">
 				<h4>Categories</h4>
-				<nav class="sidebar_nav">
+				<nav class="sidebar_nav"> <!-- Don't forget to close your tags!  This <nav> tag has no close tag. -->
 					<ul>
 						<li>Success stories</li>
 						<li>Stats</li>
@@ -65,6 +87,7 @@
 
 			<footer>
 				<h1 class="footer">Relaxr</h1>
+				<!-- Nice use of the <nav> tag for these footer links.  Very semantic. -->
 				<nav class="footer_social">
 					<a href="http://www.twitter.com">
 						<img src="images/twitter.png" alt="Twitter">

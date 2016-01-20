@@ -1,5 +1,6 @@
 $('.readmore').click(readMore);
 $('.readless').click(readLess);
+$('.learnmore').click(learnMore);
 
 function readMore() {
 	$('#show_this_on_click').slideDown();
@@ -13,10 +14,7 @@ function readLess() {
 	$('.readmore').show();
 }
 
-$('.learnmore').click(learnMore);
-
 function learnMore() {
 	$('#learnmoretext').slideDown();
 	$('.learnmore').hide();
-}
 }

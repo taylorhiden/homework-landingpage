@@ -21,16 +21,18 @@ function changeCity() {
 	//if the city is Austin, change to austin.jpg
 	//if the city is Sydney, change to sydney.jpg
 
-	if (city == 'NYC'|| 'New York City'||'New York') { 
-		$('body').addClass('nyc');
-	} else if (city == 'San Francisco'|| 'SF'|| 'Bay Area') {
-		$('body').addClass('sf');
-	} else if (city == 'Los Angeles'|| 'LA'|| 'LAX') {
-		$('body').addClass('la');
-	} else if (city == 'Austin'|| 'ATX') {
-		$('body').addClass('austin');
-	} else if (city == 'Sydney'|| 'SYD') {
-		$('body').addClass('sydney');
+	if (city == 'NYC'|| city == 'New York City'|| city == 'New York') { 
+		$('body').removeClass().addClass('nyc');
+	} else if (city == 'San Francisco'|| city == 'SF'|| city == 'Bay Area') {
+		$('body').removeClass().addClass('sf');
+	} else if (city == 'Los Angeles'|| city == 'LA'|| city == 'LAX') {
+		$('body').removeClass().addClass('la');
+	} else if (city == 'Austin'|| city == 'ATX') {
+		$('body').removeClass().addClass('austin');
+	} else if (city == 'Sydney'|| city == 'SYD') {
+		$('body').removeClass().addClass('sydney');
+	} else {
+		$('body').removeClass();
 	}
 
 

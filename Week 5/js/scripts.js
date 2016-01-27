@@ -22,19 +22,14 @@ function changeCity() {
 	//if the city is Sydney, change to sydney.jpg
 
 	if (city == 'NYC'|| 'New York City'||'New York') { 
-		$('body').attr('background');
 		$('body').addClass('nyc');
 	} else if (city == 'San Francisco'|| 'SF'|| 'Bay Area') {
-		$('body').attr('background');
 		$('body').addClass('sf');
 	} else if (city == 'Los Angeles'|| 'LA'|| 'LAX') {
-		$('body').attr('background');
 		$('body').addClass('la');
 	} else if (city == 'Austin'|| 'ATX') {
-		$('body').attr('background');
 		$('body').addClass('austin');
 	} else if (city == 'Sydney'|| 'SYD') {
-		$('body').attr('background');
 		$('body').addClass('sydney');
 	}
 

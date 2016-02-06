@@ -37,16 +37,10 @@ header nav {
 }
 header nav ul li {
   display: inline-block;
-  margin: 0 0 0 30px;
+  margin: 0 10px 0 20px;
   font-size: 1.25em;
 }
 
-.sub{
-    margin: 0 0 0 0px;
-    font-size: 1.25em;
-    display: none;
-
-}
 header nav ul li a {
   color: #417292;
   padding: 0 10px;
@@ -54,6 +48,41 @@ header nav ul li a {
 nav a:hover {
   background: #407192;
   color: white;
+  padding: 0 10px 0 10px;
+}
+
+nav ul > li ul   { 
+  background: #407192; 
+  solid #000; 
+  display: none; 
+  margin: 0;
+  position: absolute; 
+  z-index: 1000;
+      -moz-box-shadow: 2px 2px 4px #999;
+   -webkit-box-shadow: 2px 2px 4px #999;
+           box-shadow: 2px 2px 4px #999; 
+}
+
+nav ul > li li { 
+  float: none;
+  font-size: 18px;
+  color: white; 
+}
+
+nav ul > li li a { 
+  color: white; 
+  display: inline; 
+  margin: 0 1px; 
+  padding: 12px 25px 12px 15px; 
+}
+
+nav ul > li:hover ul { 
+ display: block;
+ padding: 8px 25px 8px 0; 
+}
+
+nav ul > li li:hover   { 
+  background: #407192; 
 }
 
 .description {

@@ -1,0 +1,156 @@
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  color: #1c1c1c;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #606161;
+  font-family: 'Hind Siliguri', sans-serif;
+  font-weight: 400;
+}
+
+.container {
+width: 100%;
+max-width: 1100px;
+margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  padding: 25px 25px;
+  margin: 25px 25px;
+  overflow: hidden;
+}
+
+header #logo {
+  float: left;
+}
+
+header nav {
+  float: right;
+  margin-top: 15px;
+}
+header nav ul li {
+  display: inline-block;
+  margin: 0 10px 0 20px;
+  font-size: 1.25em;
+}
+
+header nav ul li a {
+  color: #417292;
+  padding: 0 10px;
+}
+nav a:hover {
+  background: #407192;
+  color: white;
+  padding: 0 10px 0 10px;
+}
+
+nav ul > li ul   { 
+  background: #407192; 
+  solid #000; 
+  display: none; 
+  margin: 0;
+  position: absolute; 
+  z-index: 1000;
+      -moz-box-shadow: 2px 2px 4px #999;
+   -webkit-box-shadow: 2px 2px 4px #999;
+           box-shadow: 2px 2px 4px #999; 
+}
+
+nav ul > li li { 
+  float: none;
+  font-size: 18px;
+  color: white; 
+}
+
+nav ul > li li a { 
+  color: white; 
+  display: inline; 
+  margin: 0 1px; 
+  padding: 12px 25px 12px 15px; 
+}
+
+nav ul > li:hover ul { 
+ display: block;
+ padding: 8px 25px 8px 0; 
+}
+
+nav ul > li li:hover   { 
+  background: #407192; 
+}
+
+.description {
+  color: white;
+  font-size: 1.5em;
+  background-color: rgba(152, 153, 153, .5);
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.graphic {
+  background: url(../images/US_Capitol_Building,_East_side_steps_and_dome.jpg) no-repeat center #131e27;
+  height: 300px;
+  background-size: cover;
+  padding: 100px 100px;
+}
+
+.advocacy, .development, .digital{
+  width: 33%;
+  display: inline-block;
+  text-align: center;
+  margin: 40px 0;
+}
+.advocacy img, .development img, .digital img {
+  width: 200px;
+}
+
+
+h2 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: .75em;
+}
+
+p {
+  color: white;
+  font-size: 1.1em;
+  padding-right: 50%;
+  padding: 75px 50% 10px 50px;
+}
+
+article {
+  background: url(../images/thomas-jefferson.jpg) no-repeat center #131e27;
+  height: 400px;
+  background-size: cover;
+}
+
+footer {
+  text-align: center;
+  background-color: #407192;
+  padding: 30px 0;
+  color: white;
+}
+
+footer img {
+  width: 40px;
+  padding: 20px 10px 0 10px;
+}
+
+footer img:hover {
+  opacity: 50%;
+}
+
+
+
+
+
+
+

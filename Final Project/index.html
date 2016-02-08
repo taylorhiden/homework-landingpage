@@ -11,10 +11,16 @@
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
+
+	<!-- Don't forget to open your <body> tag here -->
 		<div class="container">
 				<header>
+					<!-- Definitely good to set the width of your image, but it is better form to either use
+					     the "width" attribute or to put the style in your CSS
+					-->
 					<a id="logo" href="index.html"><img src="images/allstrat_logo.png" alt="Allegiance Logo" style="width:350px;"></a>
 					<nav>
+						<!-- Great use of nested lists for your navigation! -->
 						<ul>
 							<li><a class="dropdown" href="#">About</a>
 								<ul>
@@ -39,7 +45,9 @@
 
 				</header>
 		</div>
-	<body>
+	<body> <!-- Make sure you open your body tag at the start of the visible content on your page -->
+
+		<!-- Nice use of sections to organize your site content! -->
 		<section class="graphic">
 			<div class="container">
 				<h1 class="description">Allegiance Strategies, LLC is a niche public affairs consulting firm focused on helping clients achieve a pro-growth, competitive, and inclusive America.</h1>
@@ -47,6 +55,9 @@
 		</section>
 		<section class="departments">
 			<div class="container">
+				<!-- Technically, you can have a section inside of a section, but it is not 100% semantic.
+				     I would probably use the <article> tag inside here instead.
+				-->
 				<section class="advocacy">
 					<a href="#"><img src="images/advocacy_icon.jpg" alt="Advocacy"></a><br>
 					<h2>Advocacy</h2>
@@ -61,6 +72,10 @@
 				</section>
 			</div>
 		</section>
+
+		<!-- Using the <article> tag is fine here, but it is more semantic to use the <blockquote> tag, since
+		     this is an actual quote.  :)
+		-->
 		<article>
 			<p>I am certainly not an advocate for frequent changes in laws and constitutions. But laws and institutions must go hand in hand with the progress of the human mind. As that becomes more developed, more enlightened, as new discoveries are made, new truths discovered and manners and opinions change, with the change of circumstances, institutions must advance also to keep pace with the times. We might as well require a man to wear still the coat which fitted him when a boy as civilized society to remain ever under the regimen of their barbarous ancestors.<br><br>- Thomas Jefferson</p>
 		</article>

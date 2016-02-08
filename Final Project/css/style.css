@@ -6,6 +6,7 @@ body {
   color: #1c1c1c;
   font-size: 16px;
   line-height: 1.4;
+  /* This color property is overriding the color property above */
   color: #606161;
   font-family: 'Hind Siliguri', sans-serif;
   font-weight: 400;
@@ -22,6 +23,14 @@ a {
 }
 
 header {
+  /* The padding and margin properies are great, but just a note.  Since you have the same values for
+   * top/bottom and left/right for both, you can just use 1 value like this:
+   * 
+   *     padding: 25px;
+   *     margin: 25px;
+   *
+   * Same result as what you have, just less typing.
+   */
   padding: 25px 25px;
   margin: 25px 25px;
   overflow: hidden;
@@ -53,7 +62,7 @@ nav a:hover {
 
 nav ul > li ul   { 
   background: #407192; 
-  solid #000; 
+  solid #000; /* Typo?  This is not a complete property */
   display: none; 
   margin: 0;
   position: absolute; 

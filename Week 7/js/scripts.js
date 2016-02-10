@@ -13,8 +13,6 @@ $(document).ready(function() {
 		'SYD'
 	];
 
-	var currentImage= images[0];
-
 
 //Adds options to dropdown list
 for ( var i = 0; i < images.length ; i++ )  {
@@ -36,6 +34,8 @@ $('#city-type').change(function() {
 		$('body').removeClass().addClass('atx');
 	} else if (city == 'SYD') {
 		$('body').removeClass().addClass('syd');
+	} else {
+		$('body').removeClass();
 	}
 
 });

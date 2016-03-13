@@ -1,3 +1,10 @@
+<!--
+	Hi Taylor!  I am including feedback about your code in inline HTML comments.
+
+	Overall, great job!  Your form looks great and your code is very well formatted.
+	More comments below.
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -33,6 +40,24 @@
 
 				<form>
 					<div id="name">
+						<!-- 
+							Remember that the value of the "for" attribute on the label should be identical
+							to the name of the field to which it refers.  This example with the name fields
+							is a weird circumstance that we did not really go over in class.
+
+							When you have a bunch of related fields that need to be grouped together, you can
+							group them together inside a container HTML tag called <fieldset>, like this:
+
+							<fieldset name="fullName">
+								<input type="text" name="firstName" placeholder="First Name" id="first">
+								<input type="text" name="lastName" placeholder="Last Name" id="last">
+							</fieldset>
+
+							The <fieldset> tag can have a name attribute - you can use *that* value as the value
+							for the "for" attribute on your label:
+
+							<label for="fullName">Name:</label>
+						-->
 						<label for="yourName">Name:</label>
 						<input type="text" name="firstName" placeholder="First Name" id="first">
 						<input type="text" name="lastName" placeholder="Last Name" id="last">
@@ -43,6 +68,12 @@
 					</div>
 					<div>
 						<label for="phoneNumber">Phone Number:</label>
+						<!-- 
+							This looks great, but remember that each input field's "name" should be unique.
+							It is sort of like the ID.  The value of the "name" attribute here is used on the 
+							backend to keep track of all of the form data being submitted, so each field
+							needs a unique name - even fields that are related to each other. 
+						-->
 						<input type="number" name="quantity" min="100" max="999"> - <input type="number" name="quantity" min="100" max="999"> - <input type="number" name="quantity" min="1000" max="9999">
 					</div>
 					<div>
@@ -105,6 +136,7 @@
 						     <option value=“wisconsin”>Wisconsin</option>
 						     <option value=“wyoming”>Wyoming</option>
 						</select>  
+						<!-- Nice use of the "min" and "max" attributes for the postal code here! -->
 						<input type="number" name="postalCode" placeholder="Zip" size="20" min="10000" max="99999">
 					</div>
 					<div id="password">
@@ -115,7 +147,7 @@
 						<input type="checkbox" name="terms" value="terms">I agree to the terms of service</input>
 			</form>
 
-
+				<!-- Make sure that your submit button is also inside the <form> tags -->
 				<section id="contact">
 					<input type="submit" value="Register Now!">
 				</section>
